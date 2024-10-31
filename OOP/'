@@ -1,0 +1,15 @@
+class RoboFriend:
+    def __init__(self,name:str,age:int):
+        self.name = name
+        self.age = age
+    def stateName(self):
+        print("Hello, my name is", self.name)
+    def stateAge(self):
+        if self.age == 0:
+            print("I was just born!")
+            return
+        if self.age == 1:
+            print("I'm 1 year old!")
+            return
+        print("I'm", self.age, "years old!")
+
