@@ -1,0 +1,8 @@
+The mean number of apples is 6.23
+The median number of apples is 6.50
+The mean number of bananas is 6.27
+The median number of bananas is 6.00
+The mean number of strawberries is 5.98
+The median number of strawberries is 6.00
+The mean number of all fruits is 6.16
+The median number of all fruits is 6.00
