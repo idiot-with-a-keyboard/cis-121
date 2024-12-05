@@ -1,7 +1,27 @@
 import FirstName_LastName_Stats as stats
 
+times_wrong:int = 0
 
-data = stats.read_data("500DayFruitData.txt")
+while True:
+    try:
+        filename = input("enter file name:")
+        open(filename,"r")
+    except:
+        times_wrong += 1
+        if input("File not found. Try another file name? (y/n): ") == "n":
+            quit("No file found, exiting program.")
+        else:
+            print(f"number of tries so far: {times_wrong}.\n")
+    else:
+        break
+
+
+data = stats.read_data(filename)#"500DayFruitData.txt")
+
+print("file:",filename,"has successfully been processed.")
+print("See output.txt for fruit statistics.")
+print("number of tries so far: {times_wrong}.\n")
+
 #static initialization
 mean:float = 0
 means:list[float] = []
